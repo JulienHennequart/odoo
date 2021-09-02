@@ -1,0 +1,43 @@
+/* FOOTER */
+
+.footer {
+    color: $white;
+    & section{
+        position: relative;
+        padding:0px;
+        border-bottom: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(128,128,128,1) 50%, rgba(255,255,255,0) 100%);
+    }
+    & .col:first-child{
+        margin-left:0px;
+    }
+    & .row > div{
+        margin-top:0px;
+    }    
+    & .col-md-3 .col-lg-4 .col-xl-3 .mx-auto .mb-4 {
+        margin-left: 0px !important;
+
+    }
+    & p {
+        font-size: map-get($font, button );
+        font-weight: $font-weight-lighter;
+
+    }
+    & .navbar-brand{
+        position:relative;
+        top:-13px;
+    }
+    & h3 {
+        font-weight: $font-weight-light;
+    }
+    & .termsPrivacyFooter {
+        font-size: map-get($font, button );
+        -left: -20px !important; 
+        margin-right: 39px;   
+    }
+    & button {
+        margin-left: 20px;
+    }
+   
+}
+    
+

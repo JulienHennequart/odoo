@@ -1,0 +1,118 @@
+$font: (
+    category: 25px,
+    title: 20px,
+    text: 16px,
+    sub-text: 13px,
+    button: 12px
+);
+
+$radius: (
+    small: 6px,
+    medium: 12px,
+    large: 25px,
+    cercle: 50%,
+    special: 12px 12px 60px 12px
+);
+
+$padding:(
+    xs-small:4px 10px,
+    small: 8px 15px,
+    medium: 40px 30px 40px 30px,
+    img: 30px 20px,
+    creditCard: 30px 30px
+);
+
+$logoSize:(
+    small: 100px,
+    medium: 90%
+);
+
+$shadow:(
+    boxShadow: 0px 0px 15px 5px rgba(0,0,0,0.05),
+);
+
+
+/* avatar sizes */
+$avatarSize:(
+    avatar-large: 50px ,
+    avatar-medium: 40px,
+    avatar-small: 35px 
+);
+
+@each $avatar, $value in  $avatarSize { 
+    .#{$avatar} {
+        height: $value !important;
+        width: $value !important;
+        border-radius: calc($value/2) !important;
+        line-height: $value;
+    }
+}
+
+
+
+
+
+/* articles colors */
+
+$badgeColors: (
+    tools-h1: $orange, 
+    features-h1: $green, 
+    technology-h1: $blue, 
+    install-h1: $orange,
+    awards-h1: $green
+    );
+
+@each $name, $color in $badgeColors {
+   .#{$name} {
+       background-color: $color;
+   } 
+};
+
+/* backgrounds colors */
+
+$backgroundColors:(
+    articles: $white,
+    awards: $lightGrey,
+    answers: $white,
+    footer: $darkBlue
+);
+
+
+/* backgrounds oblique line */
+
+@each $name, $color in $backgroundColors {
+    .#{$name} {
+        background-color: $color;
+    }
+    .#{$name}::before{
+        content: " ";
+        display: block;
+        position: absolute;     
+        height: 200px;
+        margin-bottom:-200px;
+        left:-50px;
+        width: 150%;
+        background-color: $color;
+        transform: rotate(-3deg);
+        transform-origin: top left;
+    }
+};
+
+/* section 2: article 1 => orange gauges */
+
+$gaugeLevels:(
+    line1: 40%,
+    line2: 80%,
+    line3: 20%
+);
+
+@each $name, $level in $gaugeLevels {
+    .#{$name} {
+        height: 2px;
+        background-color: $orange;
+        width: $level;
+    } 
+ };
+
+
+

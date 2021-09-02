@@ -1,0 +1,11 @@
+/* MY MIXINS */
+
+/* list in line */
+
+ @mixin listInLine {   
+        border: 1px solid red;
+        display: flex;
+        & li {
+        list-style: none;
+        }    
+ }

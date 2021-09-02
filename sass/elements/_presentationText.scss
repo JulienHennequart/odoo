@@ -1,0 +1,29 @@
+.presentation {
+    & > div {
+        padding-right: 50px;
+        & > * {
+            margin-bottom: 30px;
+        }
+    }
+    &.right {
+        margin-left: 200px;
+        margin-top: 66px;
+    }
+    
+    & h1 {
+        color: $white;
+        font-weight: $font-weight-light;
+        font-size: $font-size-lg;
+        border-radius: map-get($radius, large );
+        display: inline-block;
+        padding: map-get($padding, small )
+    }
+    & h2 {
+        font-size: map-get($font, category );
+        font-weight: $font-weight-light;
+    }
+    & p {
+        color: $gray-600;
+    }
+    
+}

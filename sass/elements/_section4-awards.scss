@@ -1,0 +1,45 @@
+.awards {
+    /* text alignment */
+    
+    /* all cards */
+    & section{
+
+        position: relative;
+        width:100%;        
+        top:-25px;
+        & .presentation {
+            text-align: center;
+            margin: auto;
+            padding-bottom: 40px;
+            & .awards-h1 {
+                margin-bottom: 40px;
+            }
+        }
+        & .col, .row{
+            position:relative;
+            display: flex;
+            flex-wrap: unset;
+        }
+        & .card{
+            width:25%; 
+            height:280px;
+            flex-grow: 1;  
+            margin-left:13px;  
+            transition: 0.1s;
+            &.firstCard {
+                margin-top: 50px !important;
+            } 
+        }
+        & .card:first-child{
+           margin:0px;
+        }
+        & .card:nth-child(even){
+            margin-top:100px;        
+        }
+        & .card:hover{
+            transform: scale(1.1);      
+        }
+
+    }
+}
+ 

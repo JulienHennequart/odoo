@@ -1,0 +1,9 @@
+.newProject {
+    & h1,  button {
+        color: $gray-800;
+        margin-bottom: 40px;
+    }
+    & p {
+        text-align: center;
+    }
+}

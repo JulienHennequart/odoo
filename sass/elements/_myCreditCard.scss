@@ -1,0 +1,73 @@
+.creditCard {
+    padding: map-get($padding, creditCard );
+    border-radius: map-get($radius, medium );
+    background-image: url("img/color/cardBackground.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    color: $white;
+    & .row:first-child{
+        padding-bottom:20px;
+    }
+    & > * {
+        margin: auto;
+        /*margin-bottom: 20px;*/
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    /* active button */
+    & .row .col:nth-child(2) {
+        text-align: right;
+        margin-top: -8px;
+    }
+    & img {
+        width: auto !important;
+        height: 30px;
+    }
+    & button {
+        border: none;
+        background-color: $green;
+        color: $white;
+        font-size: map-get($font, button );
+        padding: map-get($padding, xs-small );
+
+    }
+    & .cardNumber {
+        font-family: $font-family-monospace;
+        font-weight: $font-weight-lighter;
+        font-size: 27px;
+        width: auto;
+        white-space: nowrap;
+
+        // " - " between numbers
+        & span + span::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            border-top: solid 2px white;
+            position: relative;
+            top: -7px;
+            //left: -7px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+    & dl{
+        margin-bottom:0px;
+    }
+    & dd {
+        font-weight: $font-weight-lighter;
+        font-size: map-get($font, button );
+        color:white !important;
+    }
+    & dt {
+        font-weight: $font-weight-normal;
+    }
+    & time span + span::before{
+        content: "/";
+
+    }
+}
+
+

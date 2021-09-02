@@ -1,0 +1,154 @@
+/* ALL articles */
+
+.articles{
+    & article .col{
+        position: relative;
+        z-index: 5000;      
+    }
+    & article {
+        padding-top: 50px !important;
+        padding-bottom: 50px;
+        position: relative;
+        & .left {
+            padding-right: 20px;
+            }
+        & .right {
+           padding-left: 20px;
+        }
+            /* 1: tools */
+        & .video {
+            position: relative;
+            top: -369px;
+            right: 10px;
+        }        
+    }
+    & article::after{
+        content: " ";
+        display:block;
+        height:300px;
+        width:300px;
+        background-image: url("../../img/b&w/dottedline.svg");
+        background-size: contain;
+        position: absolute;
+        z-index: 4000;
+    }
+    & .tools:after{       
+        bottom: -106px;
+        right: 410px;
+        transform: rotate(90deg);
+    }
+    & .features:after{
+        bottom: -84px;
+        right: 276px;    
+    }
+    & .technology:after{
+        transform: rotate(90deg);
+        bottom: -126px;
+        right: 410px;   
+    }
+    & .install:after{
+        bottom: -134px;
+        right: 276px;   
+    }
+} 
+    
+
+/* article 1: tools */
+.tools {
+    & .left {
+        margin-left: -40px;
+        position: relative;
+    }
+    & .card {
+        height: auto;
+        margin: 0px 40px;
+        padding-bottom: 30px;
+        width:100%;
+        & p {
+            font-size: map-get($font, title );
+            margin-left: 15px;
+            padding-bottom: 25px;
+        }
+        & .col-8 {
+            text-align: start;
+            margin-top: 10px;
+        }
+        & .col {
+            text-align: end;
+        }
+        & .greyLine {
+            height: 2px;
+            background-color: $gray-400;
+            margin-bottom: 20px;
+        }  
+          
+    }
+    /* video */
+    & .floatingImage{
+        width: 66%;
+        position: absolute;
+        top: -39px;
+        left: 287px;
+        & > div{
+            position:relative;
+            &  button {
+                position: absolute;
+                top: 10px;
+                right:10px;
+            }
+        }
+    }
+    
+}
+
+/* article 2: features*/
+
+.features {
+     & .checkBox {
+        color: $green !important;
+        & i {
+            padding-right: 20px;
+        }
+    }
+
+}
+
+/* article 3: technology */
+
+.technology {
+    /* left */
+    & .left .row > *{
+        max-width: auto !important;
+        & .card {
+            max-width: auto;
+            margin-right: 5px !important;
+            margin-bottom: 5px !important; 
+            //padding: 0px;
+            & .row {
+                padding:  10px;
+            }
+    
+        } 
+    }
+    /* right */
+    & .right {
+        &.presentation {
+            margin-left: 85px !important;
+        }
+     
+    }
+
+}
+
+/* article 3: technology */
+
+.install {
+    & .left img {
+        width: 150px;
+        margin-right: 20px;
+    }
+}
+
+
+
+

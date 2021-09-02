@@ -1,0 +1,22 @@
+.answers {
+    & p, h2 {
+        text-align: center;
+    }
+    & p {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    /* accordion header */
+    & .card {
+    padding: 10px; 
+    margin: 14px 7px 0px 7px;  
+    border-radius: map-get($radius, medium ); 
+    & button, & .cardContent{
+        color: $gray-800 !important;
+        &:hover {
+            color: $blue !important;
+            text-decoration: none !important;
+        }
+    }
+    }
+}

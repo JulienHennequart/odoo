@@ -1,0 +1,71 @@
+/* button' shape */
+
+.myButton {
+    background-color:  $white;
+    border-radius: map-get($radius, small);
+    padding: map-get($padding , small);
+    color: $gray-600;
+    font-size: map-get($font, text);
+    position: relative;
+    top: 7px;
+    border: none;
+    &:hover {
+        background-color: $blue;
+        text-decoration: none;
+        color: $white;
+    }
+    &.menu:hover {
+        background-color: $mediumBlue;
+    }
+
+}
+
+.blueButton {
+    background-color: $blue !important;
+    color: $white !important;
+    border: 1px solid $blue;
+    &:hover {
+        background-color: $darkBlue !important;
+        border: solid 1px $darkBlue;
+    }
+}
+
+.intro .getStartedButton {
+    color: $blue;
+    border: 1px solid $white;
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $white;
+        color: $white;
+    }
+}
+
+.menu {
+    margin-left: 20px;
+    color: $gray-800;
+    & i {
+        margin-right: -10px;
+    }
+}
+
+.learn {
+    border: solid 1px $white;
+    &:hover {
+        background-color: transparent;
+        color: $blue !important;
+        border: solid 1px $blue;
+    }
+
+}
+ .purchase:hover {
+     border: solid 1px $white !important;
+ }
+
+ .solution a:hover {
+     color: $white !important;
+ }
+
+ .solutionButton:hover {
+     color: $white !important;
+ }
+   

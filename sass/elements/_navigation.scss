@@ -1,0 +1,48 @@
+/* MAIN NAVIGATION */
+
+
+/* so sticky and z-index work */
+body {
+    &  > .row{
+        position: relative;
+        z-index: $zindex-modal;
+    }
+    & > .row:first-child{
+        background-color: $blue;
+        display: flex;
+        overflow: auto;
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+        z-index: $zindex-tooltip;
+    }
+}
+
+header {
+    width: 100% !important;
+    padding: 10px 0px;
+    background-color: $blue;
+    & .navbar-brand {
+        margin-top: -8px;
+
+    }
+    /* centered menu */
+    & ul.navbar-nav:first-child {
+        margin: auto;
+    }
+}
+
+
+.bg-light {
+
+    background-color: $blue !important;
+    width: 100%;
+    & .nav-link {
+        color: $white !important;
+        &:hover {
+            color: $mediumBlue !important;
+        }
+    }
+}
+
+

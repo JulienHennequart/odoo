@@ -1,0 +1,29 @@
+.card {
+    text-align: center;
+    border: 1px solid $gray-200 !important;
+    margin: none;
+    box-shadow: map-get($shadow, boxShadow );
+    padding: map-get($padding , medium );
+    color: $gray-600;
+    background-color: $white;
+    font-size: map-get($font, sub-text );
+    & img {
+        width: map-get($logoSize, medium );
+        margin: auto;
+    }
+    /* stars size */
+    & img:nth-child(2) {
+        width: 100px;
+    }
+    /* number of stars text size */
+    & dt {
+        font-size: map-get($font, text );
+    }
+}
+
+
+/* section 2 articles cards */
+
+
+
+

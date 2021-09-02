@@ -1,0 +1,25 @@
+.solutions {
+    & section {
+        background-color: $darkBlue;
+        border-radius: 12px 60px 0px 0px;
+        color: $white;
+        padding-left: 80px;
+        padding-top: 60px !important;
+        padding-bottom: 200px;
+        & div:nth-child(2){
+            text-align: end;
+            margin-right: 80px;
+        }
+        & h2 {
+            font-weight: $font-weight-light;
+            margin-bottom: 20px;
+        }
+        & p {
+            font-weight: $font-weight-lighter;
+
+        }
+        & .myButton {
+            color: $darkBlue;
+        }
+    }
+}
